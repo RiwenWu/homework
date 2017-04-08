@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NeiHe_lab05</string>
+    <string name="cancel_dialog_wifi">取消</string>
+    <string name="connetion_dialog_wifi">连接</string>
+    <string name="pass_dialog_wifi">密码</string>
+    <string name="ssid_dialog_wifi">ssid</string>
+</resources>

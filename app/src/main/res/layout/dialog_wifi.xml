@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/wiif_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            android:text="@string/ssid_dialog_wifi"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/wifi_mima"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            android:hint="@string/pass_dialog_wifi"
+            android:imeOptions="actionDone"
+            android:inputType="number"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="5dp">
+
+        <example.neihe_lab05.MytextView_dialog_wifi
+            android:id="@+id/cancel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:layout_gravity="left|center_vertical"
+            android:textAlignment="center"
+            android:text="@string/cancel_dialog_wifi"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-condensed"
+            android:typeface="monospace"
+            />
+
+        <example.neihe_lab05.MytextView_dialog_wifi
+            android:id="@+id/connection"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceListItemSmall"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:layout_gravity="right|center_vertical"
+            android:textAlignment="center"
+            android:text="@string/connetion_dialog_wifi"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif-condensed"
+            android:typeface="monospace"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
